@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/dchat_background_login"
-    tools:context=".MainActivity">
-
+    tools:context=".Activities.SignInActivity">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
