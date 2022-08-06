@@ -28,6 +28,5 @@ public class IntroActivity extends MaterialIntroActivity {
 
         addSlide(new SlideFragmentBuilder().title("OK, Enough Intro").description("\nLet's chat").image(R.drawable.ic_start_svg).buttonsColor(R.color.primaryDark).backgroundColor(R.color.primary).build());
 
-
     }
 }
