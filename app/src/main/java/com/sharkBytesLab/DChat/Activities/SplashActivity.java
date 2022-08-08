@@ -35,7 +35,7 @@ public class SplashActivity extends AppCompatActivity {
             {
                 if(preferences.getBoolean("isMain", false))
                 {
-                    startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                    startActivity(new Intent(SplashActivity.this, SignInActivity.class));
                     finish();
                 }
                 else
@@ -44,7 +44,7 @@ public class SplashActivity extends AppCompatActivity {
                     editor.apply();
 
                     TaskStackBuilder.create(SplashActivity.this)
-                            .addNextIntentWithParentStack(new Intent(SplashActivity.this, MainActivity.class))
+                            .addNextIntentWithParentStack(new Intent(SplashActivity.this, SignInActivity.class))
                             .addNextIntent(new Intent(SplashActivity.this, IntroActivity.class))
                             .startActivities();
                 }
