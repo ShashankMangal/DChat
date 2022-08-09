@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.sharkBytesLab.DChat">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -39,6 +41,15 @@
         <activity
             android:name=".MainActivity"
             android:exported="false"/>
+
+        <service
+            android:name=".FirebaseServices.MessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
     </application>
 
 </manifest>

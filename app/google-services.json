@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "891416831923",
+    "project_id": "dchat-7697a",
+    "storage_bucket": "dchat-7697a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891416831923:android:4a5a0a996f6887c3df0dc6",
+        "android_client_info": {
+          "package_name": "com.sharkBytesLab.DChat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "891416831923-0o8gghen4sdlct0s3cc6n0bb13pjp7la.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOfQOr2ryd_gqFPq3M73pQ_duOBGIRhJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "891416831923-0o8gghen4sdlct0s3cc6n0bb13pjp7la.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

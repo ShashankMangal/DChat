@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/signup_background_final"
+    android:background="@drawable/signup_background"
     android:clipToPadding="false"
     android:overScrollMode="never"
     android:scrollbars="none"
@@ -37,19 +37,54 @@
               android:src="@drawable/ic_avatar"
               />
 
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:gravity="center"
+              >
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Sign Up!"
+                  android:layout_gravity="center_vertical"
+                  android:textColor="@color/primary"
+                  android:textSize="@dimen/_22ssp"
+                  android:textStyle="bold"
+                  android:fontFamily="@font/airbnb_cereal_light"
+                  android:gravity="bottom"
+                  android:layout_marginStart="@dimen/_10sdp"
+                  />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Hey, get on board"
+                  android:layout_gravity="center_vertical"
+                  android:textColor="@color/primary_text"
+                  android:textSize="@dimen/_16ssp"
+                  android:fontFamily="@font/airbnb_cereal_light"
+                  android:textStyle="bold"
+                  android:gravity="bottom"
+                  android:layout_marginStart="@dimen/_10sdp"
+                  />
+
           <TextView
               android:id="@+id/signupProfileImageText"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
-              android:text="Add Profile Image"
+              android:text=" Add Profile Image "
+              android:background="@drawable/line_background"
               android:layout_gravity="center_vertical"
               android:textColor="@color/primary_text"
               android:textSize="@dimen/_12ssp"
               android:fontFamily="@font/airbnb_cereal_medium"
               android:gravity="bottom"
               android:layout_marginStart="@dimen/_10sdp"
+              android:padding="@dimen/_1sdp"
               />
 
+          </LinearLayout>
       </LinearLayout>
 
 
