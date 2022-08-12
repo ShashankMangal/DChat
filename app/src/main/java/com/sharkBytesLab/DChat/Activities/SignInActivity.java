@@ -1,12 +1,10 @@
 package com.sharkBytesLab.DChat.Activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.graphics.PorterDuff;
 import android.os.Bundle;
 
-import com.sharkBytesLab.DChat.R;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.sharkBytesLab.DChat.databinding.ActivitySignInBinding;
 
 public class SignInActivity extends AppCompatActivity {
@@ -27,7 +25,9 @@ public class SignInActivity extends AppCompatActivity {
     {
         binding.textCreateNewAccount.setOnClickListener(v ->
                 startActivity(new Intent(getApplicationContext(), SignUpActivity.class)));
+
     }
+
 
 
 }
