@@ -19,6 +19,7 @@
         >
 
       <LinearLayout
+          android:id="@+id/signUpProfileImageLayout"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_marginTop="@dimen/_40sdp"
@@ -77,7 +78,7 @@
               android:background="@drawable/line_background"
               android:layout_gravity="center_vertical"
               android:textColor="@color/primary_text"
-              android:textSize="@dimen/_12ssp"
+              android:textSize="@dimen/_10ssp"
               android:fontFamily="@font/airbnb_cereal_medium"
               android:gravity="bottom"
               android:layout_marginStart="@dimen/_10sdp"
@@ -160,21 +161,40 @@
             android:fontFamily="@font/airbnb_cereal_medium"
             />
 
-        <com.google.android.material.button.MaterialButton
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_15sdp"
-            android:text="Sign Up"
-            android:textAllCaps="false"
-            android:id="@+id/signUpButton"
-            android:background="@drawable/button_rounded_background"
-            app:backgroundTint="@color/primaryDark"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_15ssp"
-            android:fontFamily="@font/airbnb_cereal_medium"
-            android:textStyle="bold"
-            android:elevation="3dp"
-            />
+            android:animateLayoutChanges="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:id="@+id/signUpButton"
+                android:background="@drawable/button_rounded_background"
+                app:backgroundTint="@color/primaryDark"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:fontFamily="@font/airbnb_cereal_medium"
+                android:textStyle="bold"
+                android:elevation="3dp"
+                />
+
+            <ProgressBar
+                android:id="@+id/signUpProgressBar"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                android:progressTint="@color/white"
+                android:foregroundTint="@color/white"
+                />
+
+        </FrameLayout>
+
+
 
         <TextView
             android:layout_width="wrap_content"

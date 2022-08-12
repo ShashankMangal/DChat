@@ -8,10 +8,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-import android.window.SplashScreen;
 
-import com.sharkBytesLab.DChat.MainActivity;
-import com.sharkBytesLab.DChat.R;
 import com.sharkBytesLab.DChat.databinding.ActivitySplashBinding;
 
 public class SplashActivity extends AppCompatActivity {
