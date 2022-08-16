@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Apps By ShaShank/APPS FOR INTERN/DChat/app/src/main/res/drawable/background_content_bottom.xml" value="0.2255" />
         <entry key="..\:/Android Apps By ShaShank/APPS FOR INTERN/DChat/app/src/main/res/drawable/background_image_profile.xml" value="0.2255" />
         <entry key="..\:/Android Apps By ShaShank/APPS FOR INTERN/DChat/app/src/main/res/drawable/button_rounded_background.xml" value="0.2255" />
         <entry key="..\:/Android Apps By ShaShank/APPS FOR INTERN/DChat/app/src/main/res/drawable/ic_dchat.xml" value="0.2255" />
@@ -13,10 +14,12 @@
         <entry key="..\:/Android Apps By ShaShank/APPS FOR INTERN/DChat/app/src/main/res/drawable/main_background.xml" value="0.2255" />
         <entry key="..\:/Android Apps By ShaShank/APPS FOR INTERN/DChat/app/src/main/res/drawable/splash_bg.xml" value="0.2255" />
         <entry key="..\:/Android Apps By ShaShank/APPS FOR INTERN/DChat/app/src/main/res/layout/activity_intro.xml" value="0.25104166666666666" />
-        <entry key="..\:/Android Apps By ShaShank/APPS FOR INTERN/DChat/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Android Apps By ShaShank/APPS FOR INTERN/DChat/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Android Apps By ShaShank/APPS FOR INTERN/DChat/app/src/main/res/layout/activity_sign_in.xml" value="0.25104166666666666" />
         <entry key="..\:/Android Apps By ShaShank/APPS FOR INTERN/DChat/app/src/main/res/layout/activity_sign_up.xml" value="0.25104166666666666" />
         <entry key="..\:/Android Apps By ShaShank/APPS FOR INTERN/DChat/app/src/main/res/layout/activity_splash.xml" value="0.25104166666666666" />
+        <entry key="..\:/Android Apps By ShaShank/APPS FOR INTERN/DChat/app/src/main/res/layout/activity_users.xml" value="0.25104166666666666" />
+        <entry key="..\:/Android Apps By ShaShank/APPS FOR INTERN/DChat/app/src/main/res/layout/main_user_item.xml" value="0.25104166666666666" />
       </map>
     </option>
   </component>
