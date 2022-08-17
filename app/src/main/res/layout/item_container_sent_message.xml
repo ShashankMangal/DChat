@@ -6,7 +6,7 @@
     android:padding="@dimen/_4sdp">
 
     <TextView
-        android:id="@+id/sent_testMessage"
+        android:id="@+id/sent_textMessage"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/background_sent_message"
@@ -26,6 +26,6 @@
         android:textSize="@dimen/_10ssp"
         android:textColor="@color/secondary_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/sent_testMessage"
+        app:layout_constraintTop_toBottomOf="@id/sent_textMessage"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>
