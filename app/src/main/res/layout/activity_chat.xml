@@ -64,6 +64,7 @@
         android:layout_marginEnd="@dimen/_8sdp"
         android:ellipsize="end"
         android:gravity="center"
+        android:fontFamily="@font/airbnb_cereal_light"
         android:maxLines="1"
         android:textColor="@color/white"
         android:textSize="@dimen/_14ssp"
@@ -80,7 +81,7 @@
         android:layout_height="1dp"
         android:id="@+id/chatViewSupporter"
         android:layout_marginTop="@dimen/_12sdp"
-        android:background="@color/primary"
+        android:background="@color/white"
         app:layout_constraintTop_toBottomOf="@id/chatImageBack"
         />
 
@@ -93,6 +94,7 @@
         android:padding="@dimen/_20sdp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:id="@+id/chatRecyclerView"
+        app:stackFromEnd="true"
         app:layout_constraintBottom_toBottomOf="@id/chatView"
         app:layout_constraintTop_toBottomOf="@id/chatViewSupporter"
         android:visibility="gone"

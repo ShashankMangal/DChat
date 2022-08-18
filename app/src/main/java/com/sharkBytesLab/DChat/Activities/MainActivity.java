@@ -6,6 +6,7 @@ import androidx.core.content.ContextCompat;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.hardware.lights.LightState;
 import android.os.Bundle;
 import android.util.Base64;
 import android.widget.Toast;
@@ -14,17 +15,24 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.messaging.FirebaseMessaging;
+import com.sharkBytesLab.DChat.Adapters.RecentConversationsAdapter;
+import com.sharkBytesLab.DChat.Models.ChatMessage;
 import com.sharkBytesLab.DChat.R;
 import com.sharkBytesLab.DChat.Utilities.Constants;
 import com.sharkBytesLab.DChat.Utilities.PreferenceManager;
 import com.sharkBytesLab.DChat.databinding.ActivityMainBinding;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
     private PreferenceManager preferenceManager;
+    private List<ChatMessage> conversations;
+    private RecentConversationsAdapter conversationsAdapter;
+    private FirebaseFirestore database;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,9 +42,18 @@ public class MainActivity extends AppCompatActivity {
         preferenceManager = new PreferenceManager(getApplicationContext());
 
         getWindow().setStatusBarColor(ContextCompat.getColor(MainActivity.this, R.color.primary));
+        init();
         loadUserDetails();
         getToken();
         setListeners();
+    }
+
+    private void init()
+    {
+        conversations = new ArrayList<>();
+        conversationsAdapter = new RecentConversationsAdapter(conversations);
+        binding.recentConversationRecyclerView.setAdapter(conversationsAdapter);
+        database = FirebaseFirestore.getInstance();
     }
 
     private void setListeners()
