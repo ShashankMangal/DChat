@@ -2,6 +2,7 @@ package com.sharkBytesLab.DChat.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Toast;
@@ -78,6 +79,7 @@ public class SignInActivity extends AppCompatActivity {
                 {
                    if(task.isSuccessful() && task.getResult() != null && task.getResult().getDocuments().size() > 0)
                    {
+                       Log.e("SignIn", "Successful");
                        DocumentSnapshot documentSnapshot = task.getResult().getDocuments().get(0);
                        preferenceManager.putBoolean(Constants.KEY_IS_SIGNED_IN, true);
                        preferenceManager.putString(Constants.KEY_USER_ID, documentSnapshot.getId());
@@ -90,9 +92,9 @@ public class SignInActivity extends AppCompatActivity {
                    else
                    {
                        loading(false);
-                       showToast("Unable to Sign In!");
+                       showToast("Unable to Sign In!");;
                    }
-                });
+                }).addOnFailureListener(task -> Log.e("SignIn", task.getMessage()));
     }
 
     private void showToast(String message)

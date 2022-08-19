@@ -9,7 +9,9 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.sharkBytesLab.DChat.Listeners.ConversationListener;
 import com.sharkBytesLab.DChat.Models.ChatMessage;
+import com.sharkBytesLab.DChat.Models.User;
 import com.sharkBytesLab.DChat.databinding.RecentUserItemBinding;
 
 import java.util.List;
@@ -18,10 +20,12 @@ public class RecentConversationsAdapter extends RecyclerView.Adapter<RecentConve
 {
 
     private final List<ChatMessage> chatMessages;
+    private final ConversationListener conversationListener;
 
-    public RecentConversationsAdapter(List<ChatMessage> chatMessages)
+    public RecentConversationsAdapter(List<ChatMessage> chatMessages, ConversationListener conversationListener)
     {
         this.chatMessages = chatMessages;
+        this.conversationListener = conversationListener;
     }
 
     @NonNull
@@ -58,6 +62,14 @@ public class RecentConversationsAdapter extends RecyclerView.Adapter<RecentConve
             binding.recentImageProfile.setImageBitmap(getConversationImage(chatMessage.conversationImage));
             binding.recentTextName.setText(chatMessage.conversationName);
             binding.recentTextMessage.setText(chatMessage.message);
+            binding.getRoot().setOnClickListener(v ->
+            {
+                User user = new User();
+                user.id = chatMessage.conversationId;
+                user.name = chatMessage.conversationName;
+                user.image = chatMessage.conversationImage;
+                conversationListener.onConversationClicked(user);
+            });
         }
 
 
