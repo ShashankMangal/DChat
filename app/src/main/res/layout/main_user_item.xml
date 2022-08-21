@@ -3,7 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="@dimen/_8sdp">
+    android:padding="@dimen/_8sdp"
+    android:background="@drawable/all_item_list_background"
+    android:elevation="@dimen/_3sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    >
 
     <com.makeramen.roundedimageview.RoundedImageView
         android:layout_width="@dimen/_35sdp"
@@ -14,6 +18,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:riv_oval="true"
+        app:riv_border_color="@color/white"
+        app:riv_border_width="1dp"
         />
 
     <View
@@ -35,6 +41,8 @@
         android:maxLines="1"
         android:textColor="@color/primary_text"
         android:textSize="@dimen/_13ssp"
+        android:fontFamily="@font/airbnb_cereal_medium"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@id/itemViewSupporter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/itemImageProfile"
@@ -48,7 +56,8 @@
         android:layout_marginEnd="@dimen/_8sdp"
         android:ellipsize="end"
         android:maxLines="1"
-        android:textColor="@color/secondary_text"
+        android:fontFamily="@font/airbnb_cereal_light"
+        android:textColor="@color/white"
         android:textSize="@dimen/_10ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/itemImageProfile"

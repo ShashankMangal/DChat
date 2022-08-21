@@ -3,6 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_item_background"
+    android:elevation="@dimen/_3sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
     android:padding="@dimen/_8sdp">
 
     <com.makeramen.roundedimageview.RoundedImageView
@@ -33,6 +36,8 @@
         android:layout_marginEnd="@dimen/_8sdp"
         android:ellipsize="end"
         android:maxLines="1"
+        android:fontFamily="@font/airbnb_cereal_medium"
+        android:textStyle="bold"
         android:textColor="@color/primary_text"
         android:textSize="@dimen/_13ssp"
         app:layout_constraintBottom_toTopOf="@id/recentViewSupporter"
