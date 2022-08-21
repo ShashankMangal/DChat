@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginBottom="@dimen/_16sdp"
-        android:background="@drawable/chat_backgorund"
+        android:background="@drawable/chat_screen"
         app:layout_constraintBottom_toTopOf="@id/chatLayoutSend"
         app:layout_constraintTop_toTopOf="parent"
         />
