@@ -81,8 +81,24 @@
         android:layout_height="1dp"
         android:id="@+id/chatViewSupporter"
         android:layout_marginTop="@dimen/_12sdp"
-        android:background="@color/white"
+        android:background="@color/primary"
         app:layout_constraintTop_toBottomOf="@id/chatImageBack"
+        />
+
+    <TextView
+        android:id="@+id/chatTextAvailability"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/chatViewSupporter"
+        android:background="#008000"
+        android:text="Online"
+        android:fontFamily="@font/airbnb_cereal_light"
+        android:textStyle="bold"
+        android:paddingBottom="@dimen/_2sdp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/_10ssp"
+        android:visibility="gone"
         />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -96,7 +112,7 @@
         android:id="@+id/chatRecyclerView"
         app:stackFromEnd="true"
         app:layout_constraintBottom_toBottomOf="@id/chatView"
-        app:layout_constraintTop_toBottomOf="@id/chatViewSupporter"
+        app:layout_constraintTop_toBottomOf="@id/chatTextAvailability"
         android:visibility="gone"
         />
 
